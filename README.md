@@ -1,1 +1,1 @@
-# heroes3
+# Фан-сайт гри Heroes of Might and Magic III
