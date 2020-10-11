@@ -1,10 +1,16 @@
 body {
 	/*position поигратся*/
 
-	background: url(../images/bg.jpg) 14.9% 5.3%;
+	background: url(../images/bg.jpg) 34.8% 8.9%;
 	font-family: "Times New Roman", Times, serif;
 	font-size: 18px;
 }
+
+.clear-fix:after {
+	content: "";
+	clear: both;
+	display: block;
+	}
 
 .main-wrapper {
 	margin: 12px auto;
@@ -31,7 +37,7 @@ a {
 	color: #577613;
 	border-bottom: 2px solid #b5c1a3;
 	display: inline-block;
-	line-height: 1em;
+	line-height: 1;
 }
 
 .header__content {
@@ -42,24 +48,38 @@ a {
 	padding: 0 0 0 15px;
 }
 
-.header__logo-text,
+/*.header__logo-text,
 .header__logo,
 .header__content-contacts {
 	display: inline-block;
 	vertical-align: text-bottom;
+}*/
+
+.header__logo {
+	float: left;
 }
 
+.header__logo a {
+	display: block;
+}
+
+.header__logo img {
+	display: block;
+	float: left;
+}
 .header__logo-text {
+	display: inline-block;
+	padding: 18px 0 0 34px;
 	text-align: center;
-	padding-left: 28px;
-	padding-bottom: 16px;
+	/*padding-left: 28px;
+	padding-bottom: 16px;*/
 }
 
 .logo-text__row1,
 .logo-text__row2,
 .logo-text__row3 {
 	display: block;
-	text-align: center;
+	color: #000000;
 }
 
 .logo-text__row1 {
@@ -94,13 +114,12 @@ a {
 }
 
 .main {
-	padding: 21px 15px 15px;
-	margin-bottom: 10px;
+	padding: 22px 15px 25px;
 }
 
 h1 {
 	font-size: 28px;
-	padding: 9px 0 10px;
+	padding: 10px 0 10px;
 }
 
 .main__content {
@@ -111,13 +130,13 @@ h1 {
 .main__content-text {
 	text-indent: 20px;
 	font-size: 16px;
-	line-height: 1.5em;
-	padding: 16px 0 11px;
+	line-height: 1.5;
+	padding: 17px 0 11px;
 	font-weight: 500;
 }
 
 .text2 {
-	padding-top: 11px;
+	padding-top: 12px;
 }
 
 .main__content-text a {
@@ -141,22 +160,16 @@ h1 {
 	padding: 0 15px;
 }
 
-.main::after {
-	content: "";
-	clear: both;
-	display: block;
-}
-
 .navigation__title {
 	font-size: 22px;
-	line-height: 48px;
+	line-height: 2.18;
 	padding-left: 15px;
 	margin-right: -30px;
 	background-color: #31420b;
 }
 
 .navigation__content {
-	padding: 27px 15px 0px 16px;
+	padding: 29px 15px 0px 16px;
 }
 
 .navigation__content li {
