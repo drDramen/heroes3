@@ -1,6 +1,6 @@
 body {
 	font-size: 18px;
-	font-family: "Times New Roman", Times, serif;
+	font-family: 'Times New Roman', Times, serif;
 
 	/*position поигратся*/
 	background: url(../images/bg.jpg) 34.8% 8.9%;
@@ -9,7 +9,7 @@ body {
 .clear-fix:after {
 	display: block;
 	clear: both;
-	content: "";
+	content: '';
 }
 
 .main-wrapper {
@@ -17,6 +17,18 @@ body {
 	margin: 12px auto;
 	background-color: #ffffff;
 	border-radius: 8px;
+}
+
+a {
+	display: inline-block;
+	color: #577613;
+	line-height: 1;
+	border-bottom: 2px solid #b5c1a3;
+}
+
+.footer a,
+.header__logo a {
+	border: 0;
 }
 
 .header__top,
@@ -33,23 +45,13 @@ body {
 	border-radius: 8px;
 }
 
-a {
-	display: inline-block;
-	color: #577613;
-	line-height: 1;
-	border-bottom: 2px solid #b5c1a3;
-}
-
 .header__content {
 	padding: 12px 15px 0px;
 }
 
 .header__logo {
-	padding: 0 0 0 15px;
-}
-
-.header__logo {
 	float: left;
+	padding: 0 0 0 15px;
 }
 
 .header__logo a {
@@ -177,9 +179,3 @@ h1 {
 	display: flex;
 	justify-content: space-between;
 }
-
-.footer a,
-.header__logo a {
-	border: none;
-}
-
